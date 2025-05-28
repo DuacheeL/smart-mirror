@@ -7,6 +7,7 @@ import TheVideo from '../components/TheVideo.astro';
 import TheTime from '../components/TheTime.astro';
 import TheDate from '../components/TheDate.astro';
 import TheWeather from '../components/TheWeather.astro';
+import DailyComments from '../components/DailyComments.astro';
 
 // Styling
 import '../styles.css';
@@ -17,13 +18,20 @@ import '../styles.css';
 	<TheVideo />
 
 	<main class="layout">
-
-		<TheTime />
-
-		<TheDate />
-
+		<div class="top-container">
+			<div class="datetime-container">
+			<TheTime />
+			<TheDate />
+			</div>
 		<TheWeather />
+		</div>
+	
+		<DailyComments />
+	
+
+
 
 	</main>
 
+	""'''" 
 </BaseLayout>

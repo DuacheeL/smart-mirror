@@ -1,0 +1,40 @@
+<section class="dailyComments">
+  <p>Daily Comments</p>
+ 
+</section>
+
+<script lang="js">
+  // Static Data
+  const textToDisplay = [
+	"Looking Great Today!",
+    "I hope you have a wonderful day!",
+    "One step at a time.",
+    "Take a moment to appreciate the little things.",
+    "It's okay, you're doing great!",
+    "Let's have a productive day!",
+    "You're enough, just as you are.",
+    "Do things today!",
+    "Keep smiling, it looks good on you!",
+    "Don't forget to take breaks!",
+    "Believe in yourself!",
+    "Every day is a fresh start.",
+    "You are capable of amazing things.",
+    "Stay positive, work hard, make it happen.",
+    "Your potential is limitless.",
+    "Embrace the challenges, they make you stronger.",
+    "You are loved and appreciated.",
+  ]
+// Randomization
+const maxNumOfText = textToDisplay.length;
+// console.log( textToDisplay.length );
+
+// Random number between 0 and size-of-the-array
+const randomNumber = Math.floor(Math.random() * maxNumOfText);
+
+// GET element
+const elemToChange = document.querySelector('p');
+
+// SET element
+elemToChange.textContent = textToDisplay[ randomNumber ];
+
+
